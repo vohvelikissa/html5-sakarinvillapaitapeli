@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sakarinvillapaitapeli</title>
+	</head>
+	<script>
+		function whydoe(iidee) {
+			var a = document.getElementById("pelialkaa");
+			var b = document.getElementById(iidee);
+			a.style.display = 'none';
+			b.style.display = 'block';
+		}
+		function khyl() {
+			whydoe("peliloppuu1");
+		}
+		function enhh() {
+			whydoe("peliloppuu2");
+		}
+	</script>
+	<body>
+		<h1 id="pelialkaa">Pue Sakarille villapaita</h1>
+		<h1 id="peliloppuu1" style="display: none;">Hävisit pelin :/</h1>
+		<h1 id="peliloppuu2" style="display: none;">Hihhihhi kutittaa</h1>
+		<button onclick="khyl()">Joo</button>
+		<button onclick="enhh()">EN</button>
+	</body>
+</html>
